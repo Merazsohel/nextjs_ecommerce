@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import dynamic from 'next/dynamic'
 import PageTitleBox from "../components/Layout/components/PageTitleBox/PageTitleBox";
+const OurTeam = dynamic(() => import('../components/OurTeam/OurTeam'));
 
 class About extends Component {
     render() {
@@ -57,131 +59,7 @@ class About extends Component {
                                </div>
                            </div>
                        </div>
-                       <div className="row my-4">
-                           <div className="col-12">
-                               <h2 className="noo-sh-title">Meet Our Team</h2>
-                           </div>
-                           <div className="col-sm-6 col-lg-3">
-                               <div className="hover-team">
-                                   <div className="our-team"><img src="images/img-1.jpg" alt=""/>
-                                       <div className="team-content">
-                                           <h3 className="title">Williamson</h3> <span
-                                           className="post">Web Developer</span></div>
-                                       <ul className="social">
-                                           <li>
-                                               <a href="#" className="fab fa-facebook"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-twitter"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-google-plus"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-youtube"></a>
-                                           </li>
-                                       </ul>
-                                       <div className="icon"><i className="fa fa-plus" aria-hidden="true"></i></div>
-                                   </div>
-                                   <div className="team-description">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam,
-                                           maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum
-                                           rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                                   </div>
-                                   <hr className="my-0"/>
-                               </div>
-                           </div>
-                           <div className="col-sm-6 col-lg-3">
-                               <div className="hover-team">
-                                   <div className="our-team"><img src="images/img-2.jpg" alt=""/>
-                                       <div className="team-content">
-                                           <h3 className="title">Kristiana</h3> <span className="post">Web Developer</span>
-                                       </div>
-                                       <ul className="social">
-                                           <li>
-                                               <a href="#" className="fab fa-facebook"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-twitter"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-google-plus"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-youtube"></a>
-                                           </li>
-                                       </ul>
-                                       <div className="icon"><i className="fa fa-plus" aria-hidden="true"></i></div>
-                                   </div>
-                                   <div className="team-description">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam,
-                                           maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum
-                                           rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                                   </div>
-                                   <hr className="my-0"/>
-                               </div>
-                           </div>
-                           <div className="col-sm-6 col-lg-3">
-                               <div className="hover-team">
-                                   <div className="our-team"><img src="images/img-3.jpg" alt=""/>
-                                       <div className="team-content">
-                                           <h3 className="title">Steve Thomas</h3> <span
-                                           className="post">Web Developer</span></div>
-                                       <ul className="social">
-                                           <li>
-                                               <a href="#" className="fab fa-facebook"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-twitter"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-google-plus"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-youtube"></a>
-                                           </li>
-                                       </ul>
-                                       <div className="icon"><i className="fa fa-plus" aria-hidden="true"></i></div>
-                                   </div>
-                                   <div className="team-description">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam,
-                                           maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum
-                                           rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                                   </div>
-                                   <hr className="my-0"/>
-                               </div>
-                           </div>
-                           <div className="col-sm-6 col-lg-3">
-                               <div className="hover-team">
-                                   <div className="our-team"><img src="images/img-1.jpg" alt=""/>
-                                       <div className="team-content">
-                                           <h3 className="title">Williamson</h3> <span
-                                           className="post">Web Developer</span></div>
-                                       <ul className="social">
-                                           <li>
-                                               <a href="#" className="fab fa-facebook"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-twitter"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-google-plus"></a>
-                                           </li>
-                                           <li>
-                                               <a href="#" className="fab fa-youtube"></a>
-                                           </li>
-                                       </ul>
-                                       <div className="icon"><i className="fa fa-plus" aria-hidden="true"></i></div>
-                                   </div>
-                                   <div className="team-description">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam,
-                                           maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum
-                                           rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                                   </div>
-                                   <hr className="my-0"/>
-                               </div>
-                           </div>
-                       </div>
+                     <OurTeam/>
                    </div>
                </div>
            </>
