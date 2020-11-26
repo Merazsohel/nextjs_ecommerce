@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TopBar from "../TopBar/TopBar";
 import TopSearch from "../TopSearch/TopSearch";
+import Link from "next/link";
 
 class Header extends Component {
     render() {
@@ -16,13 +17,23 @@ class Header extends Component {
                                         aria-label="Toggle navigation">
                                     <i className="fa fa-bars"></i>
                                 </button>
-                                <a className="navbar-brand" href="index.html"><img src="images/logo.png" className="logo" alt="" /></a>
+                                <Link href="/">
+                                <a className="navbar-brand"><img src="images/logo.png" className="logo" alt="" /></a>
+                                </Link>
                             </div>
 
                             <div className="collapse navbar-collapse" id="navbar-menu">
                                 <ul className="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                                    <li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="about.html">About Us</a></li>
+                                    <li className="nav-item active">
+                                        <Link href="/">
+                                        <a className="nav-link">Home</a>
+                                        </Link>
+                                        </li>
+                                    <li className="nav-item">
+                                        <Link href="/about">
+                                        <a className="nav-link">About Us</a>
+                                        </Link>
+                                    </li>
                                     <li className="dropdown megamenu-fw">
                                         <a href="#" className="nav-link dropdown-toggle arrow"
                                            data-toggle="dropdown">Product</a>

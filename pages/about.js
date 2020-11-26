@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import dynamic from 'next/dynamic'
 import PageTitleBox from "../components/Layout/components/PageTitleBox/PageTitleBox";
-const OurTeam = dynamic(() => import('../components/OurTeam/OurTeam'));
+const OurTeam = dynamic(() => import('../components/OurTeam/OurTeam'),
+{
+    loading: () => <p>Loading...</p>,
+    ssr: false
+});
 
 class About extends Component {
     render() {
